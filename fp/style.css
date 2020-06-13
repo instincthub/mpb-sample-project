@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ==============================
+Basic Style
+================================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: #6e6e6e;
+}
+
+h2{
+    color: #2b77bb;
+}
+
+h3{
+    color: #6e6e6e;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+
+/* ==============================
+NavBar
+================================= */
+
+nav{
+    background-color: #2b77bb;
+    padding: 10px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+nav a:hover{
+    color: rgb(219, 211, 97);
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+
+
+nav ul li{
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+}
+
+
+
+/* ==============================
+Banner
+================================= */
+
+.banner figure img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.banner figure{
+    text-align: center;
+}
+
+.banner{
+    padding: 50px 0px;
+    background-color: #F4F4F4;
+}
+
+
+
+
+/* ==============================
+Sections
+================================= */
+
+section{
+    
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section div img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+section div{
+    margin: 70px 0px;
+}
+
+
+
+
+
+/* ==============================
+Footer
+================================= */
+
+footer{
+    background-color: #F4F4F4;
+    padding-top: 100px;
+    text-align: center;
+}
+
+footer nav{
+    background-color: #F4F4F4;
+    color: #6e6e6e;
+    border-top: 1px solid #6e6e6e;
+    margin-top: 100px;
+}
+
+footer nav a{
+    color: #6e6e6e;
+}
+
+
+
+/* ==============================
+Media Query
+================================= */
+
+@media only screen and (min-width: 768px) {
+    nav .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    header figcaption{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* section div img{
+        width: 300px;
+        border-radius: 5px;
+    } */
+
+    .projects-section div{
+        width: 30%;
+    }
+    .projects-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        max-width: 1080px;
+    }
+
+}
