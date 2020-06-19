@@ -2,13 +2,38 @@
     box-sizing: border-box;
 }
 
+
+
+
 /* ==============================
 Basic Style
 ================================= */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
 
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0px;
+}
 
+h1{
+    color: #6e6e6e;
+}
 
+h2{
+    color: #2b77bb;
+    text-transform: uppercase;
+}
+
+h3{
+    color: #6e6e6e;
+    font-weight: 400;
+    font-size: 1.5em;
+}
 
 
 
@@ -16,9 +41,41 @@ Basic Style
 NavBar
 ================================= */
 
+nav{
+    background-color: #2b77bb;
+    padding: 10px 0px;
+}
 
+a{
+    text-decoration: none;
+}
 
+nav a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;;
+}
 
+nav a:hover{
+    color: rgb(219,211,97);
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+nav ul li{
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+}
 
 
 
@@ -27,11 +84,21 @@ NavBar
 Banner
 ================================= */
 
+.banner figure img{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #b4b4b4;
+    
+}
 
+.banner figure{
+    text-align: center;
+}
 
-
-
-
+.banner{
+    padding: 50px 0px;
+    background-color: #f4f4f4;
+}
 
 
 
@@ -39,24 +106,47 @@ Banner
 Sections
 ================================= */
 
+section{
+    text-align: center;
+}
 
 
+section div img{
+    width: 100%;
+    border-radius: 5px;
+}
 
+.wrapper{
+    width: 90%;
+    margin-right:  auto;
+    margin-left: auto;
+}
 
-
-
-
-
+section div{
+    margin: 70px 0px;
+}
 
 
 /* ==============================
 Footer
 ================================= */
 
+footer{
+    background-color: #f4f4f4;
+    padding-top: 100px;
+    text-align: center;
+}
 
+footer nav{
+    background-color: #f4f4f4;
+    color: #6e6e6e;
+    border-top: 1px solid #6e6e6e;
+    margin-top: 100px;
+}
 
-
-
+footer nav a{
+    color: #6e6e6e;
+}
 
 
 
@@ -67,3 +157,29 @@ Footer
 Media Query
 ================================= */
 
+@media only screen and (min-width: 768px){
+    nav .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+    }
+
+    header figcaption, .contact-disc{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .project-section div{
+        width: 30%;
+    }
+
+    .project-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        max-width: 1080px;
+    }
+}
